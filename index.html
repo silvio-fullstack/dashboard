@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Efeito Glass</title>
+</head>
+<body>
+    <div class="wallpaper">
+        <div class="menu">
+            <button class="togglePrincipal btn">Principal</button>
+            <button class="toggleFormadora btn">Formadora</button>
+            <button class="toggleManipulacao btn">Manipulação</button>
+            <button class="toggleEmbPrimaria btn">Emb Primária</button>
+            <button class="toggleEmbSecundaria btn">Emb Secundária</button>
+        </div>
+        <div class="panelPrincipal panel glass hidden">
+            <div class="dash"><h3 class="dashboard">Dashboard</h3></div>
+            <div class="time">12:20</div>
+            <div class="tiles">
+                <div class="tile weather"><h4 class="font">Formadora</h4></div>
+                <div class="tile edge"><h4 class="font">Manipulação</h4></div>
+                <div class="tile stocks"><h4 class="font">Emb. Primária</h4></div>
+                <div class="tile calendar"><h4 class="font">Emb. Secundária</h4></div>
+                <div class="tile photos"><h4 class="font">Produção</h4></div>
+                <div class="tile todo"><h4 class="font">Disponibilidade</h4></div>
+            </div>
+        </div>
+        <div class="panelFormadora panel glass hidden">
+            <div class="panelInterno">
+                <div class="text">
+                    <h4 class="textoSuperior">Formadora</h4>
+                </div>
+            </div>
+        </div>
+        <div class="panelManipulacao panel glass hidden">
+            <div class="panelInterno">
+                <div class="text">
+                    <h4 class="textoSuperior">Manipulação</h4>
+                </div>
+                <div class="tunel">
+                    <img src="images/BOVMEAT.png" alt="" class="tunelHamburguer">
+                </div>
+                <div class="info">
+                    <div class="col">
+                        <ul class="lista">
+                            <li>Temperatura</li>
+                            <li>Overdrive</li>
+                            <li>Retenção</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panelEmbPrimaria panel glass hidden">
+            <div class="panelInterno">
+                <div class="text">
+                    <h4 class="textoSuperior">Embalagem Primária</h4>
+                </div>
+            </div>
+        </div>
+        <div class="panelEmbSecundaria panel glass hidden">
+            <div class="panelInterno">
+                <div class="text">
+                    <h4 class="textoSuperior">Embalagem Secundária</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

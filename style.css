@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.menu {
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.btn {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.61);
+    padding: 0.5em 3em;
+    border-radius: 0.2em;
+    border: none;
+    font-weight: 100;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.dash {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #f9f8fae7, #fdf5c6);
+    color: black;
+}
+
+.dash .dashboard {
+    display: flex;
+    font-size: 25px;
+}
+
+.wallpaper {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: rgb(181,202,211) url('images/burguer.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.panel {
+    margin-top: 57px;
+    margin-left: 20px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 60px);
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    box-shadow: rgba(60,64,67,0.3) 0px 1px 2px 0pc, rgba(60,64,67,0.15) 0px 1px 3px 1px;
+    transition: 1s ease-in-out;
+}
+
+.hidden {
+    left: -100vw;
+}
+
+.panel .tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.panel .tiles .tile {
+    padding: 10px 0 0 10px;
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    min-height: 160px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255,255,255,0.3);
+    background: linear-gradient(to bottom right, #f9f8fae7, #fdf5c6d3);
+}
+
+
+.font {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.glass {
+    backdrop-filter: blur(12px);
+}
+
+.panelInterno {
+    background-color: rgba(255, 255, 255, 0.521);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    height: calc(100% - 10px);
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tunel {
+    display: flex;
+}
+
+.tunelHamburguer {
+    width: 350px;
+}
+
+.info {
+    display: flex;
+}
+
